@@ -1,0 +1,7 @@
+.idea/*
+!.idea/codeStyles
+!.idea/inspectionProfiles
+!.idea/dictionaries
+!.idea/vcs.xml
+!.idea/modules.xml
+!.idea/workspace.xml

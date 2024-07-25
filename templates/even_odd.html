@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>偶数奇数判定</title>
+</head>
+<body>
+    <h1>偶数奇数判定</h1>
+    <p>あなたが入力した数値は {{ number }} です。</p>
+    <p>
+        入力した数値は
+        {% if is_even %}
+            偶数
+        {% else %}
+            奇数
+        {% endif %}
+        です。
+    </p>
+    <button type="button" onclick="history.back()">戻る</button>
+</body>
+</html>
