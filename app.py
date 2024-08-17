@@ -6,7 +6,7 @@ from template_filter.resource_filter import bool_to_symbol
 
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder='')
     app.register_blueprint(analyze_number_bp)
     app.register_blueprint(items_bp)
 
