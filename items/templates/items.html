@@ -1,27 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>在庫一覧</title>
-</head>
-<body>
-    <h1>在庫一覧</h1>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>品名</th>
-                <th>在庫数</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for product in products %}
-            <tr>
-                <td>{{ product.name }}</td>
-                <td>{{ product.stock }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <button type="button" onclick="history.back()">戻る</button>
-</body>
-</html>
+{% extends "/templates/base.html" %}
+
+{% set title = "在庫一覧" %}
+{% block content %}
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th>品名</th>
+            <th>在庫数</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.stock }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% include "/templates/components/backButton.html" %}
+{% endblock %}

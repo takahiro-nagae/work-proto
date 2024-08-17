@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .centered-container {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/js/materialize.min.js"></script>
+</head>
+<body>
+    <div class="centered-container" >
+        {% include "/templates/components/navigation.html" %}
+        <div class="container row">
+            <h1 class="teal-text text-lighten-3 col s12">{{ title }}</h1>
+            <div class="col s11">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
