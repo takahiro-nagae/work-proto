@@ -1,6 +1,6 @@
 import pytest
 
-from analyze_number.analyze_number import is_even, is_prime
+from analyze_number.logic import is_even, is_prime
 
 
 def test_is_even():
