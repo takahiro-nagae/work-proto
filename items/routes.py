@@ -3,7 +3,7 @@ import os
 
 from flask import Blueprint, render_template
 
-items_bp = Blueprint('items', __name__)
+items_bp = Blueprint('items', __name__, template_folder='templates')
 
 
 @items_bp.route('/items')
