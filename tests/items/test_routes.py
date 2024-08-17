@@ -1,8 +1,10 @@
 import pytest
 
+PATH = '/items'
+
 
 def test_stock_list(client):
-    response = client.get('/items')
+    response = client.get(PATH)
 
     assert response.status_code == 200
 
