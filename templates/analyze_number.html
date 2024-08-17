@@ -16,12 +16,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>偶数・奇数</td>
-                <td>{{is_even}}</td>
+                <td>偶数</td>
+                <td>{{ is_even|bool_to_symbol }}</td>
             </tr>
             <tr>
                 <td>素数</td>
-                <td>{{is_prime}}</td>
+                <td>{{ is_prime|bool_to_symbol }}</td>
             </tr>
         </tbody>
     </table>

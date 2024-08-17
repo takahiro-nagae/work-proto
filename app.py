@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request
 
 from analyze_number import analyze_number
+from template_filter import resource_filter
 
 
 def create_app():
     app = Flask(__name__)
     app.register_blueprint(analyze_number.app)
+
+    app.template_filter('bool_to_symbol')(resource_filter.bool_to_symbol)
 
     @app.route('/')
     def home():
