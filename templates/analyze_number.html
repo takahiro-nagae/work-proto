@@ -5,17 +5,26 @@
     <title>数字の判定</title>
 </head>
 <body>
-    <h1>偶数奇数判定</h1>
+    <h1>数字の判定</h1>
     <p>あなたが入力した数値は {{ number }} です。</p>
-    <p>
-        入力した数値は
-        {% if is_even %}
-            偶数
-        {% else %}
-            奇数
-        {% endif %}
-        です。
-    </p>
+    <table>
+        <thead>
+            <tr>
+                <td></td>
+                <td>判定</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>偶数・奇数</td>
+                <td>{{is_even}}</td>
+            </tr>
+            <tr>
+                <td>素数</td>
+                <td>{{is_prime}}</td>
+            </tr>
+        </tbody>
+    </table>
     <button type="button" onclick="history.back()">戻る</button>
 </body>
 </html>
