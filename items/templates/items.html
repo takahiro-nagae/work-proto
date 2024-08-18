@@ -6,14 +6,16 @@
     <thead>
         <tr>
             <th>品名</th>
+            <th>価格</th>
             <th>在庫数</th>
         </tr>
     </thead>
     <tbody>
-        {% for product in products %}
+        {% for item in items %}
         <tr>
-            <td>{{ product.name }}</td>
-            <td>{{ product.stock }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.stock }}</td>
         </tr>
         {% endfor %}
     </tbody>
