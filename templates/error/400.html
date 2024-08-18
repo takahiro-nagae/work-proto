@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% set title = "不正なリクエスト" %}
+{% block content %}
+  <p class="flow-text">{{ error_message }}</p>
+{% include "components/backButton.html" %}
+{% endblock %}

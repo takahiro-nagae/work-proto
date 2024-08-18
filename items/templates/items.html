@@ -1,4 +1,4 @@
-{% extends "/templates/base.html" %}
+{% extends "base.html" %}
 
 {% set title = "在庫一覧" %}
 {% block content %}
@@ -20,5 +20,5 @@
         {% endfor %}
     </tbody>
 </table>
-{% include "/templates/components/backButton.html" %}
+{% include "components/backButton.html" %}
 {% endblock %}
