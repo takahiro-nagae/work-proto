@@ -13,14 +13,18 @@ app.pyを実行すればローカル環境が立ち上がる。
 # ディレクトリ構成
 
 ```
-/
-├── analyze_number/ 数値の解析：偶数奇数/素数
-    ├── templates/ ページのテンプレート
-    ├── logic.py   各種ロジック
-    ├──  routes.py ルーティング
+.
+├── analyze_number
+│   ├── logic.py 各種ロジック
+│   ├── routes.py ルーティング
+│   └── templates/ ページのテンプレート
+├── app.py アプリケーション本体
 ├── error/ エラーハンドラ
 ├── items/ 在庫一覧
 ├── template_filter/ テンプレートから参照するカスタムフィルター
-├── templates/ トップページ/汎用パーツ/エラーページなど
-├── tests/ 各種テスト
+├── templates
+│   ├── components/ 汎用パーツ
+│   ├── error/ エラーページ
+│   └── home.html トップページ
+└── tests/
 ```
